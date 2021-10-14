@@ -1,0 +1,15 @@
+.title {
+  margin: 0 0 2px 0;
+  font-weight: 500;
+}
+.input {
+  width: 160px;
+  margin-bottom: 20px;
+  border: 1px solid #999;
+  outline: none;
+  border-radius: 3px;
+}
+
+.input:focus {
+  border: 1px solid rgb(71, 177, 209, 0.6);
+}

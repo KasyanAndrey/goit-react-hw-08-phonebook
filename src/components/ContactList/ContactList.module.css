@@ -1,0 +1,30 @@
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+}
+
+.item p {
+  margin: 0 15px 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn {
+  width: 60px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  border-color: transparent;
+  background-color: rgb(71, 177, 209, 0.6);
+}
