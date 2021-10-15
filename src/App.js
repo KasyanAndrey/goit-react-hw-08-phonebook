@@ -1,5 +1,5 @@
-// import { useEffect } from 'react';
-// import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 
 import { Switch, Route } from 'react-router-dom';
 import React, { Suspense } from 'react';
@@ -12,14 +12,14 @@ import ContactsPage from './pages/ContactsPage';
 import Appbar from './components/AppBar';
 import Container from './components/Container/Container';
 import Loader from './components/Loader/Loader';
-// import { authOperations } from './redux/auth';
+import { authOperations } from './redux/auth';
 
 export default function App() {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(authOperations.fetchCurrentUser());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(authOperations.fetchCurrentUser());
+  }, [dispatch]);
 
   return (
     <Container>

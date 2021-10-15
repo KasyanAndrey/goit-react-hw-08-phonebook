@@ -42,7 +42,7 @@ export default function ContactPage(params) {
 
       {isModalOpen && (
         <Modal onClose={toggleModal}>
-          <ContactForm onSave={toggleModal} />
+            <ContactForm onSave={toggleModal} />
         </Modal>
       )}
     </Container>

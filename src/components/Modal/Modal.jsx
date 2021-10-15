@@ -2,6 +2,7 @@ import { Component } from 'react';
 import { createPortal } from 'react-dom';
 import styles from './Modal.module.css';
 
+
 const modalRoot = document.querySelector('#modal-root');
 
 export default class Modal extends Component {
@@ -28,7 +29,13 @@ export default class Modal extends Component {
   render() {
     return createPortal(
       <div className={styles.backdrop} onClick={this.handleBackdropClick}>
-        <div className={styles.content}>{this.props.children}</div>
+        <div className={styles.content}>
+          <button className={styles.buttonClose} onClick={this.handleBackdropClick} aria-label="Закрыть модал">
+            X
+          </button>
+
+          {this.props.children}
+        </div>
       </div>,
       modalRoot,
     );
