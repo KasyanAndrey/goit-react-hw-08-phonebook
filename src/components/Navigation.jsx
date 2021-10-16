@@ -38,16 +38,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-
-/* {isLoggedIn && (
-        <>
-          <NavLink
-            to="/contacts"
-            exact
-            className={s.link}
-            activeClassName={s.activeLink}
-          >
-            Contacts
-          </NavLink>
-        </>
-      )} */

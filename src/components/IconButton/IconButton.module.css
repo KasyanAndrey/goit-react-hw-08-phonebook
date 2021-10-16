@@ -1,13 +1,19 @@
 .button {
-  margin: 0;
-  padding: 10px;
-  border: none;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 60px;
+  border-radius: 3px;
+  border: transparent;
+  outline: none;
+  margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fa0707;
+  font-size: 24px;
+}
+
+.button:hover {
   color: #fff;
-  font: inherit;
-  background-color: #4caf50;
-  cursor: pointer;
+  background-color: #fa0707;
+  transition: color 0.2s linear;
 }

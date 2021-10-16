@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './IconButton.module.css';
+import s from './IconButton.module.css';
 
 export default function IconButton({
   children = null,
@@ -9,7 +9,7 @@ export default function IconButton({
   return (
     <button
       type="button"
-      className={styles.button}
+      className={s.button}
       onClick={onClick}
       {...otherProps}
     >
@@ -21,5 +21,4 @@ export default function IconButton({
 IconButton.propTypes = {
   onClick: PropTypes.func,
   children: PropTypes.node,
-  'aria-label': PropTypes.string.isRequired,
 };

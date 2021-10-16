@@ -2,18 +2,9 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from '../redux/auth';
 
-const styles = {
-  form: {
-    width: 320,
-  },
-  label: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginBottom: 15,
-  },
-};
+import s from './stylesPage/LoginPage.module.css'
 
-export default function LoginView() {
+export default function LoginPage() {
   const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -37,13 +28,13 @@ export default function LoginView() {
   };
 
   return (
-    <div>
-      <h1>Страница логина</h1>
+    <div className={s.wrapper}>
+      <h2 className={s.title}>Please log in</h2>
 
-      <form onSubmit={handleSubmit} style={styles.form} autoComplete="off">
-        <label style={styles.label}>
-          Почта
-          <input
+      <form onSubmit={handleSubmit} className={s.form} autoComplete="off">
+        <label className={s.label}>
+          Mail
+          <input className={s.input}
             type="email"
             name="email"
             value={email}
@@ -51,9 +42,9 @@ export default function LoginView() {
           />
         </label>
 
-        <label style={styles.label}>
-          Пароль
-          <input
+        <label className={s.label}>
+        Password
+          <input className={s.input}
             type="password"
             name="password"
             value={password}
@@ -61,7 +52,7 @@ export default function LoginView() {
           />
         </label>
 
-        <button type="submit">Войти</button>
+        <button type="submit" className={s.btn}>log in</button>
       </form>
     </div>
   );

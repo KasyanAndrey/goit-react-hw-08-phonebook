@@ -1,5 +1,9 @@
+.wrapper {
+  padding-top: 100px;
+}
+
 .form {
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 30px 15px;
@@ -8,18 +12,27 @@
 
 .label {
   display: flex;
+  flex-direction: column;
   margin-bottom: 15px;
   color: #fff;
 }
 
 .input {
-  width: 100%;
   border-radius: 3px;
   outline: none;
   border: transparent;
   height: 30px;
   padding: 0 10px;
   margin-bottom: 15px;
+}
+
+.title {
+  margin: 0;
+  height: auto;
+  text-align: center;
+  font-size: 72px;
+  margin-bottom: 20px;
+  color: #fa0707;
 }
 
 .btn {
@@ -34,12 +47,4 @@
   color: #fff;
   background-color: #fa0707;
   transition: color 0.2s linear;
-}
-
-.title {
-  margin: 0;
-  height: auto;
-  text-align: start;
-  margin-bottom: 20px;
-  color: #fff;
 }

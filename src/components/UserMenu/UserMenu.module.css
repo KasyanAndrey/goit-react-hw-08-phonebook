@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  margin-right: 15px;
+}
+.avatar {
+  margin-right: 8px;
+}
+.name {
+  font-weight: 700;
+  margin-right: 12px;
+  color: #fa0707;
+}
+
+.btn {
+  width: 80px;
+  height: 30px;
+  border-radius: 2px;
+  outline: none;
+  border: transparent;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #fa0707;
+  transition: color 0.2s linear;
+}

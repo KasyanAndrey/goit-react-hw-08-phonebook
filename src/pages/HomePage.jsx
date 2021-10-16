@@ -1,9 +1,10 @@
 import React from 'react';
+import s from './stylesPage/HomePage.module.css'
 
 const HomePage = () => (
-  <div>
-    <h1>Добро пожаловать в phonebook</h1>
-    <span>icon</span>
+  <div className={s.wrapper}>
+    <h1 className={s.title}>Welcome to the home page</h1>
+    <p className={s.description}>Thanks to this wonderful application, you always have your <span>phone book</span> at hand.<span></span></p>
   </div>
 );
 

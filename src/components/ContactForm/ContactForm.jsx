@@ -39,7 +39,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSabmit} className={s.form}>
       <p className={s.title}>Name</p>
-      <label htmlFor={nameInputId}>
+      <label htmlFor={nameInputId} className={s.label}>
         <input
           type="text"
           name="name"
@@ -54,7 +54,7 @@ export default function ContactForm() {
       </label>
 
       <p className={s.title}>Number</p>
-      <label htmlFor={numberInputId}>
+      <label htmlFor={numberInputId} className={s.label}>
         <input
           type="tel"
           name="number"
@@ -64,12 +64,12 @@ export default function ContactForm() {
           title="Номер телефона должен состоять цифр и может содержать пробелы, тире, круглые скобки и может начинаться с +"
           id={numberInputId}
           required
-          className={s.input + ' ' + s.number}
+          className={s.input}
         />
       </label>
 
       <button type="submit" className={s.btn}>
-        Add contact
+        Add
       </button>
     </form>
   );

@@ -2,18 +2,9 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from '../redux/auth';
 
-const styles = {
-  form: {
-    width: 320,
-  },
-  label: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginBottom: 15,
-  },
-};
+import s from './stylesPage/LoginPage.module.css'
 
-export default function RegisterView() {
+export default function RegisterPage() {
   const dispatch = useDispatch();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -41,18 +32,18 @@ export default function RegisterView() {
   };
 
   return (
-    <div>
-      <h1>Страница регистрации</h1>
+    <div className={s.wrapper}>
+      <h2 className={s.title}>Please register</h2>
 
-      <form onSubmit={handleSubmit} style={styles.form} autoComplete="off">
-        <label style={styles.label}>
-          Имя
-          <input type="text" name="name" value={name} onChange={handleChange} />
+      <form onSubmit={handleSubmit} className={s.form} autoComplete="off">
+        <label className={s.label}>
+          Name
+          <input className={s.input} type="text" name="name" value={name} onChange={handleChange} />
         </label>
 
-        <label style={styles.label}>
-          Почта
-          <input
+        <label className={s.label}>
+          Mail
+          <input className={s.input}
             type="email"
             name="email"
             value={email}
@@ -60,9 +51,9 @@ export default function RegisterView() {
           />
         </label>
 
-        <label style={styles.label}>
-          Пароль
-          <input
+        <label className={s.label}>
+        Password
+          <input className={s.input}
             type="password"
             name="password"
             value={password}
@@ -70,7 +61,7 @@ export default function RegisterView() {
           />
         </label>
 
-        <button type="submit">Зарегистрироваться</button>
+        <button type="submit" className={s.btn}>log up</button>
       </form>
     </div>
   );

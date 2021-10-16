@@ -14,17 +14,14 @@ const ContactList = () => {
     dispatch(contactsOperations.fetchContacts());
   }, [dispatch]);
 
-  const onDeletContacts = id => dispatch(contactsOperations.deliteContact(id));
+  const onDeletContacts = id => dispatch(contactsOperations.deleteContact(id));
 
   return (
     <ul className={s.list}>
       {contacts.map(({ id, name, number }) => (
         <li className={s.item} key={id}>
-          <p>{name}:</p>
-          <p>{number}</p>
-          <button onClick={() => onDeletContacts(id)} className={s.btn}>
-            Delete
-          </button>
+          <p className={s.text}>{name}: {number}</p>
+          <button onClick={() => onDeletContacts(id)} className={s.btn + ' ' + s.text}></button>
         </li>
       ))}
     </ul>

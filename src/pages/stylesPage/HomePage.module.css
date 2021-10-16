@@ -1,0 +1,27 @@
+.wrapper {
+  padding-top: 100px;
+}
+
+.title {
+  margin: 0;
+  height: auto;
+  text-align: center;
+  font-size: 72px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+}
+
+.description {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  height: 500px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.description span {
+  color: #fa0707;
+  text-transform: uppercase;
+}

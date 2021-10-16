@@ -12,7 +12,7 @@ export default function AuthNav() {
         className={s.link}
         activeClassName={s.activeLink}
       >
-        Sing up
+        Log up
       </NavLink>
       <NavLink
         to="/login"
@@ -20,7 +20,7 @@ export default function AuthNav() {
         className={s.link}
         activeClassName={s.activeLink}
       >
-        Sing in
+        Log in
       </NavLink>
     </div>
   );

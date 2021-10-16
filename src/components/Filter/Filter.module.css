@@ -1,15 +1,19 @@
 .title {
-  margin: 0 0 2px 0;
-  font-weight: 500;
+  margin: 0;
+  height: auto;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fa0707;
 }
 .input {
-  width: 160px;
-  margin-bottom: 20px;
-  border: 1px solid #999;
-  outline: none;
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
   border-radius: 3px;
-}
-
-.input:focus {
-  border: 1px solid rgb(71, 177, 209, 0.6);
+  outline: none;
+  padding: 0 10px;
+  margin-bottom: 15px;
 }
