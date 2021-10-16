@@ -26,8 +26,7 @@ export default function App() {
   return (
     <Container>
       {isFetchingCurrentUser ? (
-        (console.log('Показываем React Skeleton'),
-        (<h1>Показываем React Skeleton</h1>))
+        <h1>React Skeleton</h1>
       ) : (
         <>
           <Appbar />
@@ -47,7 +46,7 @@ export default function App() {
               >
                 <LoginPage />
               </PublicRoute>
-              <PrivateRoute path="/contacts" redirectTo="/">
+              <PrivateRoute path="/contacts" redirectTo="/login">
                 <ContactsPage />
               </PrivateRoute>
               {/* <PrivateRoute path="/upload" redirectTo="/login">
